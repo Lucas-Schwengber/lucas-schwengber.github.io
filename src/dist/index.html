@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>devfolio</title>
+  <title>lrschwengber</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="me-small.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
 </head>
@@ -13,20 +13,15 @@
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+        <a href="https://github.com/lucas-schwengber" class="icon is-large has-text-light">
           <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-          <i class="fas fa-2x fa-globe"></i>
         </a>
       </div>
     </div>
     <div class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item">
-          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
+          <a href="https://github.com/lucas-schwengber" class="icon is-large has-text-light">
             <i class="fab fa-2x fa-github"></i>
           </a>
         </div>
@@ -45,21 +40,21 @@
         <div class="level">
           <div class="level-item has-text-centered">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="img/me-big.jpg">
+              <img class="is-rounded" src="img/me-big.png">
             </figure>
           </div>
         </div>
         <div class="columns has-text-centered">
           <div class="column">
             <h1 class="title is-1">
-              Mark Macneil
+              Lucas R. Schwengber
             </h1>
             <h2 class="subtitle">
-              FullStack .NET Dev, Halifax, NS
+              PhD Student, Berkeley, CA
             </h2>
             <p>
-              <a href="docs/resume.txt" class="icon has-text-light">
-                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              <a href="docs/resume.pdf" class="icon has-text-light" target="_blank">
+                <i class="fas fa-file-word"></i> <strong>CV</strong>
               </a>
             </p>
           </div>
@@ -67,17 +62,48 @@
       </div>
     </div>
   </section>
-
   <section class="section">
     <div class="container">
       <h1 class="title">About Me</h1>
-      <hr />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+      <hr/>
+      <p>Hello there! I am currently a first year PhD student in the <a href="https://statistics.berkeley.edu/">statistics department</a> at UC Berkeley.
+      </p>
+      <p><br style="line-height:1;">
+        Before coming to Berkeley I was a master's student in Applied Mathematics at <a href="https://impa.br/en_US/">IMPA</a> where I was fortunate to be advised by <a href="https://sites.google.com/view/roboliv">Roberto I. Oliveira</a>.
+      </p>
+      <p><br style="line-height:1;">
+        In the recent past I have worked on the <a href="#match">theory</a> behind particle tracking and on devising <a href="#hash"> practical methods </a> to learn similarity preserving hash function using deep learning.
+      </p>
     </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Research projects</h1>
+      <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent" id="match">
+              <article class="tile is-child notification">
+                <p class="title">Geometric planted matchings beyond the Gaussian model</p>
+                <figure class="image is-3by3">
+                  <a href="https://arxiv.org/pdf/2403.17469" target="_blank">
+                  <img src="img/match.png">
+                  </a>
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent" id="hash">
+              <article class="tile is-child notification">
+                <p class="title">Deep Hashing via Householder Quantization</p>
+                <figure class="image is-3by3">
+                  <a href="https://arxiv.org/pdf/2311.04207" target="_blank">
+                  <img src="img/hash.png">
+                  </a>
+                </figure>
+              </article>
+            </div>
   </section>
   <section class="section">
     <div class="container">
@@ -88,29 +114,27 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/dunder-mifflin-logo.png" alt="Placeholder image">
+                <img src="img/petrobras-8.svg" alt="Placeholder image">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">January 2018</time> - <time
-                  datetime="2019-9">Sepemter 2019</time> </p>
+              <p class="title is-4">Petrobras</p>
+              <p class="subtitle is-6">Consultant - <time datetime="2024-3">March 2024</time> - <time
+                  datetime="2024-7">July 2024</time> </p>
             </div>
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+            <p>Consulting project via <a href="https://centropi.impa.br/">Centro Pi</a> for <a href="https://petrobras.com.br/en/home-petrobras">Petrobras</a></p>
             <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
+              <li>Investigated the use of physics-informed neural networks to solve seismic inversion problems.</li>
             </ul>
             <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+              <span class="tag">python</span>
+              <span class="tag">bash</span>
+              <span class="tag">pytorch</span>
+              <span class="tag">tensorboard</span>
+              <span class="tag">PINNs</span>
+              <span class="tag">git</span>
             </div>
           </div>
         </div>
@@ -120,29 +144,26 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/pied-piper-logo.png" alt="Placeholder image">
+                <img src="img/rede_globo.png" alt="Placeholder image">
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Company Name</p>
-              <p class="subtitle is-6">Title - <time datetime="2018-1">August 2017</time> - <time
-                  datetime="2017-9">January 2018</time></p>
+              <p class="title is-4">Rede Globo</p>
+              <p class="subtitle is-6">Consultant - <time datetime="2022-3">March 2022</time> - <time
+                  datetime="2022-6">June 2022</time></p>
             </div>
           </div>
           <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+            <p>Consulting project via <a href="https://centropi.impa.br/">Centro Pi</a> for <a href="https://redeglobo.globo.com/">Rede Globo</a>.</p>
             <ul>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
-              <li>Noteworthy achievment here.</li>
+              <li>Worked with media metadata, recommendation systems and natural language processing.</li>
             </ul>
             <div class="tags">
-              <span class="tag">c#</span>
-              <span class="tag">xamarin</span>
-              <span class="tag">asp.net core</span>
-              <span class="tag">.net core</span>
-              <span class="tag">azure</span>
-              <span class="tag">devops</span>
+              <span class="tag">sklearn</span>
+              <span class="tag">python</span>
+              <span class="tag">bash</span>
+              <span class="tag">nltk</span>
+              <span class="tag">git</span>
             </div>
           </div>
         </div>
@@ -150,72 +171,6 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="section">
     <div class="container">
@@ -224,16 +179,13 @@
       <div class="card">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2016-9">September 2016</time> - <time
-                datetime="2019-9">Sepemter 2019</time></p>
+            <p class="title is-4">IMPA</p>
+            <p class="subtitle is-6">M.S. in Applied Mathematics - <time datetime="2021-8">August 2021</time> - <time
+                datetime="2023-6">June 2023</time></p>
           </div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Advised by <a href="https://sites.google.com/view/roboliv">Roberto I. Oliveira </a>.</li>
             </ul>
           </div>
         </div>
@@ -241,16 +193,13 @@
       <div class="card card-gap">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2015-9">September 2014</time> - <time
-                datetime="2015-9">Sepemter 2015</time></p>
+            <p class="title is-4">UFRGS</p>
+            <p class="subtitle is-6">B.S. in Applied Mathematics - <time datetime="2017-3">March 2017</time> - <time
+                datetime="2021-6">June 2021 </time></p>
           </div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Graduated with honours.</li>
             </ul>
           </div>
         </div>
@@ -265,34 +214,26 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://github.com/mmacneil" class="icon is-large">
+            <a href="https://github.com/lucas-schwengber" class="icon is-large">
               <i class="fab fa-2x fa-github"></i>
             </a>
-            <p class="heading"><a href="https://github.com/mmacneil">github.com/mmacneil</a></p>
+            <p class="heading"><a href="https://github.com/lucas-schwengber">github</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://fullstackmark.com" class="icon is-large">
-              <i class="fas fa-2x fa-globe"></i>
-            </a>
-            <p class="heading"><a href="https://fullstackmark.com">fullstackmark.com</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="mailto:markmacneil@gmail.com" class="icon is-large">
+            <a href="mailto:lucaschwengber@gmail.com" class="icon is-large">
               <i class="fas fa-2x fa-envelope"></i>
             </a>
-            <p class="heading"><a href="mailto:markmacneil@gmail.com">markmacneil@gmail.com</a></p>
+            <p class="heading"><a href="mailto:lucaschwengber@gmail.com">gmail.com</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://www.linkedin.com/in/markmacneilhfx" class="icon is-large">
+            <a href="https://www.linkedin.com/in/lucas-schwengber-aaa270294/" class="icon is-large">
               <i class="fab fa-2x fa-linkedin-in"></i>
             </a>
-            <p class="heading"><a href="https://www.linkedin.com/in/markmacneilhfx">linkedin</a></p>
+            <p class="heading"><a href="https://www.linkedin.com/in/lucas-schwengber-aaa270294/">linkedin</a></p>
           </div>
         </div>
       </nav>
