@@ -59,9 +59,9 @@
   </section>
   <section class="section">
     <div class="container">
-      <h1 class="title">About Me</h1>
+      <h1 class="title">About me</h1>
       <hr/>
-      <p>Hello there! I am currently a second year PhD student in the <a href="https://statistics.berkeley.edu/">statistics department</a> at UC Berkeley.
+      <p>Hello there! I am currently a second year PhD student in the <a href="https://statistics.berkeley.edu/">statistics department</a> at UC Berkeley. I'm currently working with <a href="https://rgiordan.github.io/">Ryan Giordano</a> on Bayesian robustness.
       </p>
       <p><br style="line-height:1;">
         Before coming to Berkeley I was a master's student in Applied Mathematics at <a href="https://impa.br/en_US/">IMPA</a> where I was fortunate to be advised by <a href="https://sites.google.com/view/roboliv">Roberto I. Oliveira</a>.
@@ -108,29 +108,51 @@
     <div class="container">
       <h1 class="title">Research</h1>
       <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Geometric planted matchings beyond the Gaussian model</p>
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active" data-tab="current"><a>Current</a></li>
+          <li data-tab="past"><a>Past</a></li>
+        </ul>
+      </div>
+      <div id="tab-current" class="tab-content">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Posterior local sensitivity and Otto's calculus</p>
             </div>
-          <div class="content">
-            <p class="subtitle is-6"> Under review. ArXiv <a href="https://arxiv.org/pdf/2403.17469">version</a>.   </p>
-            <ul>
-              <li>Joint with <a href="https://sites.google.com/view/roboliv">Roberto I. Oliveira</a>.</li>
-            </ul>
+            <div class="content">
+              <ul>
+                <li>Joint with <a href="https://rgiordan.github.io/">Ryan Giordano</a>.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Deep Hashing via Householder Quantization</p>
+      <div id="tab-past" class="tab-content" style="display: none;">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Geometric planted matchings beyond the Gaussian model</p>
+            </div>
+            <div class="content">
+              <p class="subtitle is-6"> Under review. ArXiv <a href="https://arxiv.org/pdf/2403.17469">version</a>.   </p>
+              <ul>
+                <li>Joint with <a href="https://sites.google.com/view/roboliv">Roberto I. Oliveira</a>.</li>
+              </ul>
+            </div>
           </div>
-          <div class="content">
-            <p class="subtitle is-6"> Under review. ArXiv <a href="https://arxiv.org/pdf/2311.04207">version</a>. </p>
-            <ul>
-              <li>Joint with <a href="https://lucasresenderc.github.io/">Lucas Resende</a>, <a href="https://w3.impa.br/~pauloo/">Paulo Orenstein</a> and <a href="https://sites.google.com/view/roboliv">Roberto Oliveira</a></li>
-            </ul>
+        </div>
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4">Deep Hashing via Householder Quantization</p>
+            </div>
+            <div class="content">
+              <p class="subtitle is-6"> Under review. ArXiv <a href="https://arxiv.org/pdf/2311.04207">version</a>. </p>
+              <ul>
+                <li>Joint with <a href="https://lucasresenderc.github.io/">Lucas Resende</a>, <a href="https://w3.impa.br/~pauloo/">Paulo Orenstein</a> and <a href="https://sites.google.com/view/roboliv">Roberto Oliveira</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -282,6 +304,17 @@
   </footer>
 
   <script src="js/bundle.js"></script>
+  <script>
+    document.querySelectorAll('.tabs li').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var target = tab.getAttribute('data-tab');
+        tab.closest('.tabs').querySelectorAll('li').forEach(function(t) { t.classList.remove('is-active'); });
+        tab.classList.add('is-active');
+        tab.closest('.container').querySelectorAll('.tab-content').forEach(function(c) { c.style.display = 'none'; });
+        document.getElementById('tab-' + target).style.display = 'block';
+      });
+    });
+  </script>
 </body>
 
 </html>
